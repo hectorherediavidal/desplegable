@@ -4,6 +4,8 @@ html {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 /* VARIABLES */
 :root {
@@ -29,6 +31,15 @@ html {
   --fuente_parrafo: var(--fuente_BaseTamanyo);
 }
 /* ****************************************************************************************** */
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
 input {
   display: none;
 }
@@ -42,21 +53,20 @@ label {
 }
 ul.desplegable {
   display: none;
-  
-}
-
-input:checked ~.desplegable {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
+  list-style-type: none;
   width: 100vw;
   height: 100vh;
   background-color: var(--color_verdeBase);
-  margin: 0;
-  padding: 0;
-  padding: var(--margen_desplegables);
+  padding: calc(var(--margen_paddingGeneral)*6) var(--margen_paddingGeneral);
+  
+}
+
+input:checked ~ .desplegable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ 
 
 }
 
@@ -65,12 +75,7 @@ svg {
 }
 
 
-.icono{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
+
 
 .iconoImagen{
   width: 100px;
