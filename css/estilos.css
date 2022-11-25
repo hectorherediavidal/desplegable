@@ -32,13 +32,12 @@ html {
 }
 /* ****************************************************************************************** */
 
-body{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+z-index: 5;
 }
-
 
 input {
   display: none;
@@ -48,17 +47,16 @@ label {
   position: absolute;
   top: var(--margen_paddingGeneral);
   left: var(--margen_paddingGeneral);
-  z-index: 5;
-  
+  z-index: 10;
 }
 ul.desplegable {
   display: none;
   list-style-type: none;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color_verdeBase);
-  padding: calc(var(--margen_paddingGeneral)*6) var(--margen_paddingGeneral);
-  
+  background-color: var(--color_verdeOscuro);
+  padding: calc(var(--margen_paddingGeneral) * 6) var(--margen_paddingGeneral);
+  color: var(--color_verdeBase);
 }
 
 input:checked ~ .desplegable {
@@ -66,8 +64,7 @@ input:checked ~ .desplegable {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
- 
-
+  
 }
 
 svg {
@@ -75,9 +72,23 @@ svg {
 }
 
 
+/* HEXAGONO */
+.hexagono {
+  filter: invert(100%);
+  margin-right: 3px;
+  width: 30px;
+}
 
-
-.iconoImagen{
-  width: 100px;
+/* MARKET */
+h1 {
+  color: white;
+  font-weight: bold;
+}
+/* MAIN */
+main {
+  background-color: var(--color_verdeBase);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
