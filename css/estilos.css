@@ -1,0 +1,61 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* VARIABLES */
+:root {
+  /* COLORES */
+  --color_verdeBase: #59d9b5;
+  --color_verdeOscuro: #01402e;
+  --color_verdeClaro: #b3f2e9;
+  --color_verdeMuyClaro: #d0f2e9;
+  --color_grisFondo: #fafcfe;
+  /* MARGENES */
+  --margen_paddingGeneral: 30px;
+  --margen_paddingBotones: 8px 10px;
+  --margen_separacionSections: 80px;
+  --margen_CurvaBoton: 20px;
+  /* FUENTES */
+  --fuente_Base: Arial;
+  --fuente_BaseTamanyo: 1rem;
+  --fuente_H1: 2rem;
+  --fuente_H2: 1.5rem;
+  --fuente_H3: 1.3rem;
+  --fuenteBotones: var(--fuente_H3);
+  --fuente_parrafo: var(--fuente_BaseTamanyo);
+}
+/* ****************************************************************************************** */
+input {
+  display: none;
+}
+
+label {
+  position: absolute;
+  top: var(--margen_paddingGeneral);
+  left: var(--margen_paddingGeneral);
+  z-index: 5;
+}
+ul.desplegable {
+  display: none;
+}
+
+input:checked ~.desplegable {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color_verdeBase);
+  margin: 0;
+  padding: 0;
+
+}
+
+svg {
+  width: 32px;
+}
