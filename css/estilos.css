@@ -18,6 +18,7 @@ html {
   --margen_paddingBotones: 8px 10px;
   --margen_separacionSections: 80px;
   --margen_CurvaBoton: 20px;
+  --margen_desplegables: 100px;
   /* FUENTES */
   --fuente_Base: Arial;
   --fuente_BaseTamanyo: 1rem;
@@ -37,9 +38,11 @@ label {
   top: var(--margen_paddingGeneral);
   left: var(--margen_paddingGeneral);
   z-index: 5;
+  
 }
 ul.desplegable {
   display: none;
+  
 }
 
 input:checked ~.desplegable {
@@ -53,9 +56,23 @@ input:checked ~.desplegable {
   background-color: var(--color_verdeBase);
   margin: 0;
   padding: 0;
+  padding: var(--margen_desplegables);
 
 }
 
 svg {
   width: 32px;
+}
+
+
+.icono{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.iconoImagen{
+  width: 100px;
+  height: 100vh;
 }
