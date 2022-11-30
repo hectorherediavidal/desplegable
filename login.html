@@ -25,7 +25,7 @@
 
         <!-- DESPLEGABLE -->
         <ul class="desplegable">
-          <li>Inicio</li>
+          <a href="index.html" class="inicio"><li>Inicio</li></a>
           <li>Servicios</li>
           <li>Nosotros</li>
           <li>Contactar</li>
@@ -39,9 +39,9 @@
           </article>
           <article class="tituloLogo">
             <section class="hexagonoTitulo">
-            <img src="./svg/hexagono-verde.svg" class="hexagonoVerde" />
-            <h1 class="markets">MarketsFlow</h1>
-          </section>
+              <img src="./svg/hexagono-verde.svg" class="hexagonoVerde" />
+              <h1 class="markets">MarketsFlow</h1>
+            </section>
             <h4 class="money">Your money works</h4>
           </article>
         </section>
@@ -66,12 +66,13 @@
               autocomplete="off"
               class="password"
               required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             />
           </form>
           <a href="#" class="discover">Discover More</a>
         </section>
       </main>
-
+      <!-- FOOTER -->
       <footer>
         <h5>
           Authorised and regulated by the<br />

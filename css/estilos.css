@@ -59,6 +59,16 @@ ul.desplegable {
   color: var(--color_verdeBase);
 }
 
+.servicios{
+  text-decoration: none;
+  color: var(--color_verdeBase);
+}
+
+.inicio{
+  text-decoration: none;
+  color: var(--color_verdeBase);
+}
+
 input:checked ~ .desplegable {
   display: flex;
   flex-direction: column;
@@ -94,6 +104,7 @@ main {
 
 /* LOGIN */
 
+/* MAIN DEL LOGIN */
 .mainLogin {
   background-color: white;
   display: flex;
@@ -103,14 +114,16 @@ main {
   text-align: center;
   height: 100vh;
 }
-.hexagonoTitulo{
+/* TEXTO AL LADO DEL HEXAGONO */
+.hexagonoTitulo {
   display: flex;
 }
-
-.hexagonoVerde{
+/* ICONO HEXAGONO */
+.hexagonoVerde {
   width: 30px;
   margin-right: 3px;
 }
+/* TITULOS */
 .titulos {
   margin-bottom: 100px;
   margin-top: -20px;
@@ -128,7 +141,7 @@ main {
 .money {
   color: grey;
 }
-
+/* INPUT LOGIN */
 .login {
   background-color: var(--color_verdeBase);
   border-radius: 20px;
@@ -144,7 +157,7 @@ main {
   color: white;
   font-weight: bold;
 }
-
+/* INPUT PASSWORD */
 .password {
   background-color: var(--color_verdeClaro);
   border-radius: 20px;
@@ -167,7 +180,7 @@ main {
   color: var(--color_verdeBase);
   font-weight: bold;
 }
-
+/* FOOTER */
 footer {
   text-align: center;
   color: grey;
