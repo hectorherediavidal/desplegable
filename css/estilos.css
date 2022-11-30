@@ -71,7 +71,7 @@ ul.desplegable {
 
 .servicios{
   text-decoration: none;
-  color: black
+  color: var(--color_verdeBase);
 }
 input:checked ~ .desplegable {
   display: flex;
