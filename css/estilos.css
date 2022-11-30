@@ -61,6 +61,10 @@ ul.desplegable {
   
 }
 
+.servicios{
+  text-decoration: none;
+  color: black
+}
 input:checked ~ .desplegable {
   display: flex;
   flex-direction: column;
