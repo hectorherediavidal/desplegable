@@ -32,14 +32,14 @@ html {
 }
 /* ****************************************************************************************** */
 
-header{
+header {
   position: absolute;
   top: 0;
   left: 0;
-z-index: 5;
+  z-index: 5;
 }
 
-input {
+#boton{
   display: none;
 }
 
@@ -64,16 +64,15 @@ input:checked ~ .desplegable {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 svg {
   width: 32px;
 }
 
-
 /* HEXAGONO */
 .hexagono {
+  
   filter: invert(100%);
   margin-right: 3px;
   width: 30px;
@@ -88,7 +87,71 @@ h1 {
 main {
   background-color: var(--color_verdeBase);
   display: flex;
+  
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+/* LOGIN */
+
+.mainLogin {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.titulos {
+  padding-bottom: 150px;
+}
+
+.tituloSuperior {
+  color: var(--color_verdeBase);
+}
+
+.markets {
+  color: black;
+}
+
+.money {
+  color: grey;
+}
+
+
+.login {
+  background-color: var(--color_verdeBase);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  height: 30px;
+  width: 250px;
+  color: white;
+}
+
+
+.login::placeholder{
+  color: white;
+  font-weight: bold;
+}
+
+.password{
+  background-color: var(--color_verdeClaro);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  height: 30px;
+  width: 250px;
+  color: white;
+}
+
+
+.password::placeholder{
+  color: black;
+  font-weight: bold;
 }
