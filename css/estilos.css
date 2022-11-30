@@ -39,7 +39,7 @@ header {
   z-index: 5;
 }
 
-#boton{
+#boton {
   display: none;
 }
 
@@ -72,7 +72,6 @@ svg {
 
 /* HEXAGONO */
 .hexagono {
-  
   filter: invert(100%);
   margin-right: 3px;
   width: 30px;
@@ -87,7 +86,7 @@ h1 {
 main {
   background-color: var(--color_verdeBase);
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -104,13 +103,22 @@ main {
   text-align: center;
   height: 100vh;
 }
+.hexagonoTitulo{
+  display: flex;
+}
 
+.hexagonoVerde{
+  width: 30px;
+  margin-right: 3px;
+}
 .titulos {
-  padding-bottom: 150px;
+  margin-bottom: 100px;
+  margin-top: -20px;
 }
 
 .tituloSuperior {
   color: var(--color_verdeBase);
+  font-weight: bold;
 }
 
 .markets {
@@ -120,7 +128,6 @@ main {
 .money {
   color: grey;
 }
-
 
 .login {
   background-color: var(--color_verdeBase);
@@ -133,13 +140,12 @@ main {
   color: white;
 }
 
-
-.login::placeholder{
+.login::placeholder {
   color: white;
   font-weight: bold;
 }
 
-.password{
+.password {
   background-color: var(--color_verdeClaro);
   border-radius: 20px;
   text-align: center;
@@ -148,10 +154,26 @@ main {
   height: 30px;
   width: 250px;
   color: white;
+  margin-bottom: 30px;
 }
 
-
-.password::placeholder{
+.password::placeholder {
   color: black;
   font-weight: bold;
+}
+
+.discover {
+  text-decoration: none;
+  color: var(--color_verdeBase);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  color: grey;
+  margin-top: -100px;
+}
+
+.copyright {
+  margin-bottom: 50px;
 }
