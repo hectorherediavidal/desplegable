@@ -32,15 +32,14 @@ html {
 }
 /* ****************************************************************************************** */
 
-body{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
-
-input {
+#boton {
   display: none;
 }
 
@@ -48,17 +47,26 @@ label {
   position: absolute;
   top: var(--margen_paddingGeneral);
   left: var(--margen_paddingGeneral);
-  z-index: 5;
-  
+  z-index: 10;
 }
 ul.desplegable {
   display: none;
   list-style-type: none;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color_verdeBase);
-  padding: calc(var(--margen_paddingGeneral)*6) var(--margen_paddingGeneral);
-  
+  background-color: var(--color_verdeOscuro);
+  padding: calc(var(--margen_paddingGeneral) * 6) var(--margen_paddingGeneral);
+  color: var(--color_verdeBase);
+}
+
+.servicios{
+  text-decoration: none;
+  color: var(--color_verdeBase);
+}
+
+.inicio{
+  text-decoration: none;
+  color: var(--color_verdeBase);
 }
 
 .servicios{
@@ -70,18 +78,119 @@ input:checked ~ .desplegable {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
- 
-
 }
 
 svg {
   width: 32px;
 }
 
+/* HEXAGONO */
+.hexagono {
+  filter: invert(100%);
+  margin-right: 3px;
+  width: 30px;
+}
 
+/* MARKET */
+h1 {
+  color: white;
+  font-weight: bold;
+}
+/* MAIN */
+main {
+  background-color: var(--color_verdeBase);
+  display: flex;
 
-
-.iconoImagen{
-  width: 100px;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+}
+
+/* LOGIN */
+
+/* MAIN DEL LOGIN */
+.mainLogin {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+/* TEXTO AL LADO DEL HEXAGONO */
+.hexagonoTitulo {
+  display: flex;
+}
+/* ICONO HEXAGONO */
+.hexagonoVerde {
+  width: 30px;
+  margin-right: 3px;
+}
+/* TITULOS */
+.titulos {
+  margin-bottom: 100px;
+  margin-top: -20px;
+}
+
+.tituloSuperior {
+  color: var(--color_verdeBase);
+  font-weight: bold;
+}
+
+.markets {
+  color: black;
+}
+
+.money {
+  color: grey;
+}
+/* INPUT LOGIN */
+.login {
+  background-color: var(--color_verdeBase);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  height: 30px;
+  width: 250px;
+  color: white;
+}
+
+.login::placeholder {
+  color: white;
+  font-weight: bold;
+}
+/* INPUT PASSWORD */
+.password {
+  background-color: var(--color_verdeClaro);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  height: 30px;
+  width: 250px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.password::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.discover {
+  text-decoration: none;
+  color: var(--color_verdeBase);
+  font-weight: bold;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  color: grey;
+  margin-top: -100px;
+}
+
+.copyright {
+  margin-bottom: 50px;
 }
