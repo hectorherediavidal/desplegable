@@ -7,3 +7,5 @@
 -He cambiado el título "Document" por los correspondientes "Fondo" y "Login".
 
 -He indentado correctamente el código
+
+-He solucionado un error de altura en el login, añadiendo un heigh 100vh a su correspondiente container.

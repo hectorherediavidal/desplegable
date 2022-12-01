@@ -113,6 +113,10 @@ main {
 
 /* LOGIN */
 
+.containerLogin{
+  height: 100vh;
+}
+
 /* MAIN DEL LOGIN */
 .mainLogin {
   background-color: white;
