@@ -7,6 +7,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 /* VARIABLES */
 :root {
   /* COLORES */
@@ -30,6 +31,7 @@ html {
   --fuenteBotones: var(--fuente_H3);
   --fuente_parrafo: var(--fuente_BaseTamanyo);
 }
+
 /* ****************************************************************************************** */
 
 header {
@@ -49,6 +51,7 @@ label {
   left: var(--margen_paddingGeneral);
   z-index: 10;
 }
+
 ul.desplegable {
   display: none;
   list-style-type: none;
@@ -59,21 +62,22 @@ ul.desplegable {
   color: var(--color_verdeBase);
 }
 
-.servicios{
+.servicios {
   text-decoration: none;
   color: var(--color_verdeBase);
 }
 
-.inicio{
+.inicio {
   text-decoration: none;
   color: var(--color_verdeBase);
 }
 
-.servicios{
+.servicios {
   text-decoration: none;
   color: var(--color_verdeBase);
 }
-input:checked ~ .desplegable {
+
+input:checked~.desplegable {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,6 +100,7 @@ h1 {
   color: white;
   font-weight: bold;
 }
+
 /* MAIN */
 main {
   background-color: var(--color_verdeBase);
@@ -118,15 +123,18 @@ main {
   text-align: center;
   height: 100vh;
 }
+
 /* TEXTO AL LADO DEL HEXAGONO */
 .hexagonoTitulo {
   display: flex;
 }
+
 /* ICONO HEXAGONO */
 .hexagonoVerde {
   width: 30px;
   margin-right: 3px;
 }
+
 /* TITULOS */
 .titulos {
   margin-bottom: 100px;
@@ -145,6 +153,7 @@ main {
 .money {
   color: grey;
 }
+
 /* INPUT LOGIN */
 .login {
   background-color: var(--color_verdeBase);
@@ -161,6 +170,7 @@ main {
   color: white;
   font-weight: bold;
 }
+
 /* INPUT PASSWORD */
 .password {
   background-color: var(--color_verdeClaro);
@@ -184,6 +194,7 @@ main {
   color: var(--color_verdeBase);
   font-weight: bold;
 }
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -195,6 +206,9 @@ footer {
   margin-bottom: 50px;
 }
 
-h1, h4, h5, li{
+h1,
+h4,
+h5,
+li {
   font-family: var(--fuente_Base);
 }

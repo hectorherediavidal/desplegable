@@ -1,86 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/estilos.css" />
-  </head>
-  <body>
-    <!-- MENÚ MÓVIL -->
-    <div class="containerLogin">
-      <!-- HEADER -->
-      <header>
-        <!-- ICONO -->
-        <input type="checkbox" id="boton" />
-        <label for="boton"
-          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path
-              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-            />
-          </svg>
-        </label>
 
-        <!-- DESPLEGABLE -->
-        <ul class="desplegable">
-          <a href="index.html" class="inicio"><li>Inicio</li></a>
-          <li>Servicios</li>
-          <li>Nosotros</li>
-          <li>Contactar</li>
-        </ul>
-      </header>
-      <!-- MAIN -->
-      <main class="mainLogin">
-        <section class="titulos">
-          <article class="tituloSuperior">
-            INTELLIGENT <br />INVESTMENT MANAGEMENT
-          </article>
-          <article class="tituloLogo">
-            <section class="hexagonoTitulo">
-              <img src="./svg/hexagono-verde.svg" class="hexagonoVerde" />
-              <h1 class="markets">MarketsFlow</h1>
-            </section>
-            <h4 class="money">Your money works</h4>
-          </article>
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/estilos.css" />
+</head>
 
-        <!-- Formulario -->
-        <section class="formularioLogin">
-          <form action="" method="post">
-            <input
-              type="email"
-              name="usuario"
-              id=""
-              placeholder="Login"
-              class="login"
-              required
-            />
+<body>
+  <!-- MENÚ MÓVIL -->
+  <div class="containerLogin">
+    <!-- HEADER -->
+    <header>
+      <!-- ICONO -->
+      <input type="checkbox" id="boton" />
+      <label for="boton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </label>
 
-            <input
-              type="password"
-              name="password"
-              id=""
-              placeholder="Sign up"
-              autocomplete="off"
-              class="password"
-              required
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            />
-          </form>
-          <a href="#" class="discover">Discover More</a>
-        </section>
-      </main>
-      <!-- FOOTER -->
-      <footer>
-        <h5>
-          Authorised and regulated by the<br />
-          Financial Conduct Authority (FCA No. 792373)
-        </h5>
-        <br />
-        <h5 class="copyright">&copy; Copyright 2020 Marketsflow</h5>
-      </footer>
-    </div>
-  </body>
+      <!-- DESPLEGABLE -->
+      <ul class="desplegable">
+        <a href="index.html" class="inicio">
+          <li>Inicio</li>
+        </a>
+        <li>Servicios</li>
+        <li>Nosotros</li>
+        <li>Contactar</li>
+      </ul>
+    </header>
+    <!-- MAIN -->
+    <main class="mainLogin">
+      <section class="titulos">
+        <article class="tituloSuperior">
+          INTELLIGENT <br />INVESTMENT MANAGEMENT
+        </article>
+        <article class="tituloLogo">
+          <section class="hexagonoTitulo">
+            <img src="./svg/hexagono-verde.svg" class="hexagonoVerde" />
+            <h1 class="markets">MarketsFlow</h1>
+          </section>
+          <h4 class="money">Your money works</h4>
+        </article>
+      </section>
+
+      <!-- Formulario -->
+      <section class="formularioLogin">
+        <form action="" method="post">
+          <input type="email" name="usuario" id="" placeholder="Login" class="login" required />
+
+          <input type="password" name="password" id="" placeholder="Sign up" autocomplete="off" class="password"
+            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+        </form>
+        <a href="#" class="discover">Discover More</a>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <h5>
+        Authorised and regulated by the<br />
+        Financial Conduct Authority (FCA No. 792373)
+      </h5>
+      <br />
+      <h5 class="copyright">&copy; Copyright 2020 Marketsflow</h5>
+    </footer>
+  </div>
+</body>
+
 </html>
